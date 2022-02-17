@@ -56,5 +56,24 @@ html {
      margin-top:-7px;
  }
  .md{
-     height:5px;
+    height:5px;
  }
+ .indent {
+     margin-left: 1em;
+ }
+ .daily-value p:not(.no-divider){
+     border-bottom: 1px solid #888989;
+ }/*total fat line still has a line completely across, not indented, which is the issue for the borders.*/
+.dbl-indent {
+    margin-left: 2em;
+}
+.note {
+    font-size:0.6rem;
+    margin:5px 0;
+  }
+  .note {
+    font-size: 0.6rem;
+    margin: 5px 0;
+    padding: 0 8px;
+    text-indent:-8px;
+  } /*the padding aligned the text on the left while the text indent kept the * pushed left*/
