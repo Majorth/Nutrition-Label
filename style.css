@@ -1,0 +1,60 @@
+body {
+    font-family: "Open Sans", sans-serif;
+   
+}
+html {
+    font-size: 16px;
+}
+.label {
+    border: 2px solid black;
+    width: 270px;
+    margin: 20px auto;
+    padding: 0 7px;
+}/*first shrink the size by limiting width; center but using margin; use padding to move the text away from the edges.*/
+ *{
+     box-sizing: border-box;
+ }/*used if browser include border and padding to determine elements size. I saw 270, not 288.*/
+
+ header h1 {
+     text-align: center;
+     margin: -4px 0;
+     letter-spacing: 0.15px;
+ }/*remember the h1 element is inside the div element; hence, it pulls the line up to the border.*/
+
+ p {
+     margin:0;
+ }/*similiar to h1. It shrinks the items in the label box.*/
+ 
+ .divider {
+     border-bottom: 1px solid #888989;
+     margin: 2px 0;
+     clear: right;
+ }/*nothing in this box; hence only a border will be seen. also created one at divider lg.*/
+ /*Clears the float property, pushing the divider and content down below the float text.*/
+ .bold {
+    font-weight: 800;
+ } 
+ .right {
+     float: right;
+ }
+ .lg {
+     height: 10px;
+ }
+ .lg, .md {
+     background-color: black;
+     border:0;
+ }
+ .sm-text {
+     font-size:0.85rem;
+ }/*root em relative to font size per html so 13.6px of 16px*/
+ .calories-info h1{
+     margin: -5px -2px;
+     overflow: hidden;
+ }/*good place to use overflow to move the 230 back into the box.*/
+ .calories-info span {
+     font-size: 1.2em;
+     margin-top:-7px;
+ }
+ .md{
+     height:5px;
+ }
